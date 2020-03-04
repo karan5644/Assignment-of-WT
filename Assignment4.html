@@ -1,0 +1,29 @@
+<html>
+<head>
+	<title>Form With JavaScript</title>
+</head>
+<body bgcolor="orange">
+<form action="#" autocomplete="on" novalidate >
+	<fieldset>
+		<legend>GIVE YOUR PERSONAL INFORMATION</legend>
+	First Name : <input  type="text" name="Fname" id="fullname"  ><br>
+	Last Name : <input  type="text" name="Lname" ><br>
+	Birthdate : <input type="date" name="bday" ><br>
+	Month : <input type="month" name="bday" ><br>
+	Number : <input type="Number" name="bday" max="5" ><br>
+	telephone : <input type="url" name=""><br>
+        <input type="button" name="Fill the Form" value="Fill the Form" onblur="vlidate()"></input>
+	</fieldset>
+	<script>
+	function vlidate() {
+        var x = document.getElementById('fullname').value;
+        if(x == '')
+          {
+	     alert('Please enter your Full Name');
+	     $('#fullname').focus(); 
+          }
+        }
+	</script>
+</form>
+</body>
+</html>
